@@ -117,6 +117,25 @@
             </p>
           </section>
           <section>
+            <h2>Accsesible images and icons</h2>
+            <p>
+              When I coded this project, I was quite new to accessibility and my primary focus was contrast, responsiveness and that the user should be able to i.e, increase the font size. However, when I go back using Voiceover I found a lot of missing descriptions of i.e my SVG icons. By adding role="img" and aria-label I get the same result in assertive technology as an image with alt-text. 
+            </p>
+            <p>
+              Some places like in the exhibition page, the design changes quite a lot between devices (the background image can be on the entire section or a div inside). 
+              As a result, I had to decide how I would make these images available to the audience. While one could argue on hand that they are mainly decorative, they are tied to the exhibition and I have tried to find engageing images that might persuade users to come to the museum. For teenagers as my target audience was, it might also feel exculding that your classmates discuss or note something about the images that you couldn't see.
+            </p>
+            <p>
+              I first thought I should add the description to the section tag, since that was the element that was visible to both mobile and desktop devices, even though the latter didn't use it with a background image.
+              However, I came to realize that it made much more sense for the user to be presented to the image description AFTER the heading for that section. 
+              I thus added a new span that I marked as an image with an accessible name. This means that the image description is read aloud for all devices, and after the heading, which seems to me like the most user-friendly order.
+            </p>
+            <p>
+              By "All devices" I mean VoiceOver on ios with Safari. VoiceOver with Chrome and Safari on OsX, NVDA with Firefox, Chorme and Egde on Windows.
+            </p>
+          </section>
+
+          <section>
             <h2>Improved code</h2>
             <p>
               While working with the header, it also became tempting to create templates for header, footer, and icons to reuse the html rather that duplicate it. This makes the code much easier to maintain and improve. One of my feedbacks from the teachers was to use the CSS import statement to import the CSS a page needs from the page specific CSS-file, rather than having a long list in the HTML file, I therefore cleaned up this as well, so that my new HTML-files are much shorter now, and more adherent to the DRY principle.
@@ -135,7 +154,7 @@
                 A more prominent focus style.
               </li>
               <li>
-                Some images did not have an accessible name on the exhibition page. I have now fixed that by adding role=«img» and aria-label attributes. The design changes quite a lot between devices (the background image can be on the entire section or a div inside), so what I did for the exhibitions was that I added a new span that I marked as an image with an accessible name. This means that the image description is read aloud for all devices, and after the heading, which seems to me like the most user-friendly order.
+                While it's further explained in Innovation Coach, I found horizontal scrollbars due to how Windows browsers calculate viewport units. These scrollbars were removed when I decommisioned the use of "warning boxes" in the forms.
               </li>
             </ul>
           </section>

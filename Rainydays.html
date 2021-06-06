@@ -15,30 +15,67 @@
     <header></header>
     <main id="main">
       <article>
-        <h2>RainyDays - A webshop for rainjackets</h2>
-
         <section>
-          <h3>Introduction</h3>
-           <p></p>
-           <p>This are the changes I have made in this project:</p>
-           <ul>
-             <li><a></a></li>
-           </ul>
+          <h2>Introduction</h2>
+          <p>
+            The Rainydays page is an online store for Rainydays, where they sell rain jackets for both men and women. This was the first webpage I have ever made, and we revisited it during a later task in Interaction Design. Here we improved the site by adding JS to improve features where prioritization was based on user testing. Yet, as it is the first website, there is plenty of improvements to handle, and the page is far from perfect. 
+          </p>
+          <p>
+            In the task in interaction Design, I worked late evenings to put in place many of the major functional parts such as cart, form validation, carousel, and parts of the filter in addition to major design changes. The improvements this time around has been to complete the filter and make the site better on accessibility. In addition, I have spent time making a loader as the WP host is rather slow.
+          </p>
         </section>
-
-        <section id="">
-          <h3>Introduction</h3>
-           <p></p> 
+        <section>
+          <h2>Finished the filter</h2>
+          <p>
+            With the help of coffee and a late night, I managed to make parts of the filter during the task in Interaction Design and committed just before the submission deadline, although this did not appear in the report. The parts that were functional was filtering gender, size, and type of jackets where there was a one-to-one relationship with the filter criteria and information on the jacket object. In the last part of the filter, where one considers jacket properties, however, it is more of a threshold that jackets should pass. I.e., “It is considered waterproof if it can withstand a water column of 11 000 mm”. 
+          </p>
+          <p>
+            Since the various properties are often listed as a value on a scale, I had to define the threshold that was needed to give the jacket. Luckily, I had found some scales that I included as comments when I created the data structure. After I decided the threshold, I only needed to extract the relevant piece of data from the jacket and compare to my threshold value.
+          </p>
         </section>
-
-        <section id="">
-          <h3>Introduction</h3>
-           <p></p> 
+        <section>
+          <h2>Jacket page info</h2>
+          <p>
+            Several users have tried to click or use the “review” section on the jacket page that I had included in my very first site. Since I did not have this information at hand in my current data structure, I removed the section to avoid misunderstandings, and the disappointment of users that click something that seems like it should work. With Git version control, it will be easy to get back to it later if the data model should change to include customer reviews.
+          </p>
+          <p>
+            In addition, the jacket page has a description section where jacket description and properties were hardcoded as Lorem Ipsum text. This meant that it showed while the jacket info was loading, and the icons were misleading for jackets that does not contain any property information on i.e., insulation. I therefore edited the page to read the rating and property description from the current jacket and added the section from the JS template. In addition I added a loader one can look at while information is retrieved.   
+          </p>
         </section>
-
-        <section id="">
-          <h3>Introduction</h3>
-           <p></p> 
+        <section>
+          <h2>Inaccessible Icons</h2>
+          <p>
+            It bothers me to see that I didn’t include accessible names for SVGs in this project either, even though I know time was very short. There has been a lot of errors on the page in terms of accessibility, and it has been very useful to go through the page with a screen reader. Lack of role= “img” and aria-label on the icons led, among other things, to a blind user not realizing that there is a shopping cart icon in the top header. I have now gone through the project and fixing these issues wherever I found them.
+          </p>
+        </section>
+        <section>
+          <h2>Loader</h2>
+          <p>
+            As it takes surprisingly long time to get the data through the API sometimes, the page sorely needed a loader. Since I find myself to become somewhat more patient when the loader is more interesting than a spinning circle, I shaped this one like a rain cloud where the raindrops are falling as the page content is loaded. The idea is to give a little humorous spin to the name "Rainydays", and make the user smile a little while waiting for the download.
+          </p>
+        </section>
+        <section>
+          <h2>Skip Link ands Close menu-button</h2>
+          <p>
+            These techniques are described in the Community Science Museum, and since the layout for these two projects are following the same pattern, the benefits are the same.
+          </p>
+        </section>
+        <section>
+          <h2>What I know remains</h2>
+          <ul>
+            <li>
+              Ideally, the jacket description would be added to the product in WP and added to the data structure and jacket page.
+            </li>
+            <li>
+              Even though it hasn't been mentioned, I felt that a single button to clear the entire shopping cart could be nice.  
+            </li>
+            <li>
+              Contact form could've been made to work like in the two other projects, with a contact API on WP.
+            </li>
+            <li>
+              Likewise, the "subscribe" form could also use a separate contact form API.
+            </li>
+          </ul>
         </section>
       </article>
     </main>

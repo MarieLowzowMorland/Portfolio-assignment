@@ -120,6 +120,13 @@
   font-size: 1.01rem;
 }
 
+#close-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
 #close-menu:focus {
   clip: auto;
   position: static;
@@ -129,13 +136,6 @@
   background-color: transparent;
   border: none;
   font-size: 1rem;
-}
-
-#close-menu {
-  position: fixed;
-  left: 0;
-  top: 0;
-  clip: rect(0, 0, 0, 0);
 }
 
 .frontpage {

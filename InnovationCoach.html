@@ -171,7 +171,7 @@
             In my feedback on the exam, it was mentioned that there was a
             horizontal scrollbar. I was unable to reproduce this bug, yet since
             the corona restrictions had softened, I got hold of a Windows
-            computer on which I could reproduce the problem
+            computer on which I could reproduce the problem.
           </p>
           <p>
             It turned out that there is an issue on windows that is listed in
@@ -187,9 +187,10 @@
             out browsers on Windows has been a bit back and forth yet landed on
             including the vertical scrollbar when one use “100vw” in most cases.
             Since I only have mac devices, I was completely unaware of this
-            horizontal bar, and it is also omitted in Hotjar recordings. I guess
-            other students and users thought I knew, since there was never any
-            feedback on it either.
+            horizontal bar, and it is also omitted in Hotjar recordings. The
+            exact same issue was found in Community Science Museum, yet neither
+            users, fellow students nor the teachers grading the project had said
+            anything.
           </p>
           <p>
             Since it is a WCAG breach to have scrolling in two directions, and
@@ -207,6 +208,29 @@
               that every browser throws it away and therefore it’s not even
               visible in devtools, where I did my W3C HTML validation. It is now
               gone.
+            </li>
+            <li>
+              Since this
+              <a
+                href="https://axesslab.com/alt-texts/"
+                rel="noopener"
+                target="_blank"
+              >
+                blog page regaring alt-text
+              </a>
+              , created by a group that specialices in helping other follow WCAG
+              and accessibility standard, advocates not having alt-text on list
+              of articles, I removed them. I also removed the role="img"
+              attribute on the div tags in order to underline my wish to treat
+              them this way. User testing with a blind person gave the same
+              advice, so I'll rather add them again at a later time when I can
+              implement another view mode for these lists.
+            </li>
+            <li>
+              On the about page, the images had role="img" and an alt attribute
+              where there should have been an aria-label. However, seeing as my
+              final design could be coded as an img tag without css
+              difficulties, I choose that instead.
             </li>
           </ul>
         </section>
