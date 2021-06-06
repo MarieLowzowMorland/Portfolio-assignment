@@ -22,7 +22,7 @@
 
 #home-link {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 5px;
   left: 5px;
   z-index: 1;
@@ -53,7 +53,7 @@
 }
 
 #menu.open {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
@@ -86,8 +86,12 @@
   clip-path: polygon(22% 100%, 100% 91%, 100% 0, 0 0);
 }
 
+#menu .menu-polygon {
+  height: 100%;
+  max-height: inherit;
+}
+
 #menu nav ul {
-  overflow-y: auto;
   list-style: none;
   margin-top: 2rem;
   padding: 40px;

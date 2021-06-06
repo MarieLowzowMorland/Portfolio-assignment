@@ -162,11 +162,15 @@ const toggleMenu = (event) => {
   if(menu.classList.contains("open")){
     menu.classList.remove("open");
     menuButton.setAttribute("aria-label", "Open menu");
-    mobileFrontPage.classList.remove("menu-open");
+    if(mobileFrontPage){
+      mobileFrontPage.classList.remove("menu-open");
+    }
   } else {
     menu.classList.add("open");
     menuButton.setAttribute("aria-label", "Close menu");
-    mobileFrontPage.classList.add("menu-open");
+    if(mobileFrontPage){
+      mobileFrontPage.classList.add("menu-open");
+    }
   }
   menuButton.focus();
 };
