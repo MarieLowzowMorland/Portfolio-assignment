@@ -28,11 +28,21 @@ body {
 main article {
   max-width: 35rem;
   margin: 0 auto;
-  padding: 0 40px 40px 20px;
+  padding: 0 20px 40px;
+}
+
+img {
+  object-fit: contain;
+  height: auto;
 }
 
 figure {
   margin: 0;
+}
+
+figure img{
+  width: 100%;
+  max-width: 100%;
 }
 
 figcaption {

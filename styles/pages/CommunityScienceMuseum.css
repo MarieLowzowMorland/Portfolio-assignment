@@ -10,7 +10,7 @@ a:hover .svg-hover-page-color {
 }
 
 .frontpage .menu-polygon {
-  background-image: url(../../images/csiencemuseum.png);
+  background-image: url(../../images/csiencemuseum.jpg);
 }
 
 .frontpage .page-description,
@@ -20,7 +20,7 @@ a:hover .svg-hover-page-color {
 
 @media screen and (min-width: 992px) {
   .frontpage .description-wrapper {
-    background-image: url(../../images/csiencemuseum.png);
+    background-image: url(../../images/csiencemuseum.jpg);
   }
 
   .frontpage .menu-polygon {
