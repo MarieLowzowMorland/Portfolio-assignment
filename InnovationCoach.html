@@ -232,6 +232,14 @@
               final design could be coded as an img tag without css
               difficulties, I choose that instead.
             </li>
+            <li>
+              Based on exam feedback, it seems like there was some expectation
+              that one didn't have to reload the page after resizing the window
+              in order to avoid that yellow cirle could be placed in the section
+              below. I therefore added a resize event, and just in case there
+              was the little yellow residue that was meant, I also clip around
+              the banner so that nothing can "leak" outside.
+            </li>
           </ul>
         </section>
         <section>
