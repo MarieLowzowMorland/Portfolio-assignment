@@ -1,0 +1,32 @@
+/* 
+ * This class hides the content for human eyes,
+ * but is still readable by screen readers for 
+ * accessebility 
+ */
+.screen-reader-only {
+  position: fixed !important;
+  left: 0 !important;
+  top: 50% !important;
+  clip: rect(0, 0, 1px, 1px) !important;
+}
+
+body {
+  margin: 0px;
+}
+
+.light-background {
+  background-color: var(--primary-bg);
+  background-image: var(--light-bg-gradient);
+}
+
+.center-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+main {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 0 40px 40px 20px;
+}

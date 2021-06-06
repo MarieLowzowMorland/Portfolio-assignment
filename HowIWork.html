@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>How I Work | MM portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta
+      name="description"
+      content="A description of how I work in general and how I have worked on this assignment."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./styles/pages/howIWork.css" rel="stylesheet" type="text/CSS" />
+    <link rel="stylesheet" href="https://use.typekit.net/cog5zdr.css" />
+  </head>
+  <body>
+    <header></header>
+    <main id="main">
+      <article>
+        <h2>
+          How I work - My priorities, how I design and develop, and how I
+          approach the task
+        </h2>
+
+        <section>
+          <h3>Getting started – My understanding of the assignment</h3>
+          <p>
+            After reading the assignment description a couple of times, I set
+            out to create a list of improvements that I could come up with for
+            all the projects. I set up a checklist in Notes on my mac and
+            created a section for each project. Then I reread my earlier
+            reports, user feedback, and the feedback I got from teachers to see
+            if I had forgotten anything. I prioritized the list and added new
+            items whenever I discovered new important improvements and checked
+            them off as they got implemented.
+          </p>
+          <p>
+            As a result, I now have a good list to follow and to help me
+            understand when I should jump from one project to the next to be
+            able to improve all of them in our given timeframe. Also, it worked
+            as a good reminder when writing this report. By sharing it with my
+            mobile, I always have the list available, should an idea arise and
+            I´m not in front of my computer.
+          </p>
+          <p>
+            After I had finished this initial gathering of task, I started to
+            look at the design of the portfolio page so that I would get an
+            estimate of how much work it would be to create this
+            portfolio/report site. As I was gathering inspiration for a good
+            design, I looked at sites like Pinterest and awwards.com, and played
+            around in adobe XD. I must admit that I initially misunderstood the
+            task somewhat in the beginning and had envisioned a larger page with
+            a more classic portfolio made to sell to a potential employer. I
+            therefore installed a Wordpress instance for the portfolio together
+            with an instance for the Community Science Museum early on to handle
+            contact form feedback. However, the scope was clarified on discord
+            and I could reduce the size of the portfolio website.
+          </p>
+        </section>
+
+        <section>
+          <h3>Prioritization</h3>
+          <p>
+            As I observed that my list of improvements continued to grow, I
+            realize that my project wouldn’t become perfect, yet I could
+            probably fix a few of the most wanted features as well as improve
+            some parts of the code and improve accessibility for older projects.
+            In addition, the portfolio-site is mandatory, and while one could go
+            for a simple design and do it quickly, the assignment said: “The
+            portfolio page will form part of your assessment, both from a design
+            and technical perspective”. Thus I would rather try something a new
+            and challenging, and learn a few new things along the way.
+          </p>
+        </section>
+
+        <section>
+          <h3>Accessibility and patterns</h3>
+          <p>
+            As a front-end developer, I want to create good user experiences,
+            and it is important to me that I do not exclude anyone.
+            Accessibility is personally something that engages me as I want to
+            contribute to an including society. With this motivation in mind,
+            simply making my site compliant to Norwegian law is more of a
+            minimum requirement, as it is important to me that the user
+            experience for someone who is i.e., blind, should not be worse than
+            for someone who can see well even if the experiences will be
+            different
+          </p>
+          <p>
+            User-oriented design and development for persons with disabilities
+            is exciting, and perhaps even more challenging as the user
+            experience differs greatly from my own experience. Since I took a
+            deep dive into accessibility for the exam, I had a lot of newfound
+            experience I could use on the other projects. As an example, the
+            user testing I’ve done has given me a lot of insight on how to
+            improve some normal web page patterns that I’ve used in the earlier
+            sites I’ve made, including skip links and a “Close menu” button at
+            the end of an expanded main menu.
+          </p>
+        </section>
+
+        <section>
+          <h3>This site</h3>
+          <h4>Design</h4>
+          <p>
+            Since the index.html really doesn’t do anything other than
+            navigation, I wanted to experiment on how I could make a menu look
+            like. I wanted to create a playful and personal design, breaking
+            some of the usual patterns for desktop menu and aiming for an
+            existing digital experience. I you came to this page on a desktop, I
+            hope the hover-effect in the frontpage created a dynamic and mood
+            that made you curios enough to swipe around and look under the other
+            quadrants as well.
+          </p>
+          <p>
+            The colors for each project quadrant and page are fetched form the
+            website they represent, and acts like a theme for that project that
+            remind you where you are. The polygons are shapes that are repeated
+            throughout the site and help the site to gain a sense of identity.
+          </p>
+
+          <h4>Coding the index</h4>
+          <p>
+            Even though the design was easy to draw in Adobe XD, the polygons
+            are a bit more challenging to code. I was unsure under which
+            landmark to code it at all since I normally use the header tag for
+            my main navigational items. After reading through the HTML5
+            specification I realized it could probably fit in both the main and
+            the header tag, yet since it was the main content for this page, I
+            opted for the main landmark.
+          </p>
+          <p>
+            Then it was the quadrant itself. I considered everything from
+            rotating div tags or make a 2x2 grid where two elements on the
+            diagonals were scaled up slightly and then use clip-path in CSS.
+            However, I decided to use a huge SVG instead. Partly because it’s
+            very nature would avoid responsive or scaling problems with the
+            double MMs in the middle, and partly because I wanted to learn more
+            about them. I found that one could have links, images and all the
+            elements I would require, yet they had new names like “g” instead of
+            “div” etc.
+          </p>
+          <p>
+            The SVG started from the shell Adobe CD could give me from my
+            design, and then I added links, images, and hover effects. I also
+            made it possible to scale the font as required with the “em” unit,
+            since Safari didn’t support “rem”. Usually I add role=”img” and an
+            aria-label to SVGs in order to let screen reads understand Icons. I
+            was therefore initially a bit anxious about accessibility when using
+            SVG, and I was prepared to have invisible HTML-tags to provide
+            screen readers with the information they required. I was therefore
+            happy when I used VoiceOver and found out that screen readers read
+            SVGs with ease.
+          </p>
+          <p>
+            While SVG made the page work, it is always hard to make images with
+            motives coexist with text above the image. Especially it’s hard to
+            have it work responsively when the SVG preferably should cover the
+            entire page, and the user should still be able to scale up the font
+            size without zooming into the page. In the end I decided to create a
+            portrait version that could be clipped vertically, and a landscape
+            version that could get clipped horizontally. I have dragged and
+            tested with in a rather large range of possible screen sizes, and in
+            the most extreme aspect ratios I add a margin instead of zooming in
+            on the SVG, so that the text should always be readable.
+          </p>
+
+          <h4>Menu on mobile</h4>
+          <p>
+            On cell phones, I can’t rely on hover or tab focus and therefore I
+            wouldn’t make sense to have the same menu design on smaller screens.
+            However, I added a regular hamburger menu, yet used the shape of a
+            polygon from the SVG. I could the use the page specific image and
+            color to reuse the same menu skeleton yet get a project specific
+            feel to the page. Here I’m back in one of the more traditional
+            navigation patterns with the menu, and therefore added skip link to
+            project pages and the “close menu” button to the menu.
+          </p>
+        </section>
+      </article>
+    </main>
+    <script src="./js/pages/howIWork.js" type="module"></script>
+  </body>
+</html>

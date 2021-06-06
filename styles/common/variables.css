@@ -1,0 +1,24 @@
+:root {
+  --inovation-gradient: linear-gradient(to top, #FFF500, #FFF500aa, #FFF50077, #FFF50011);
+  --science-gradient: linear-gradient(to top, #86EBE4, #b1fffaaa, #86EBE477, #86EBE411);
+  --how-i-work-gradient: linear-gradient(to top, #dedee0, #DEDEE0aa, #DEDEE077, #DEDEE011);
+  --light-bg-gradient: linear-gradient(to bottom, #dedee0, #DEDEE0aa, #DEDEE077, #DEDEE011);
+
+  --rainydays: #70c5ff;
+  --inovation-coach: #FFF500;
+  --csm: #86EBE4;
+  --how-i-work: #B9B9B9;
+  --how-i-work-logo: #8e0093;
+  --primary-bg: #fff;
+
+  --text-primary: #555555;
+  --text-secondary: #000000;
+
+  --focus: #008386;
+  --shadow: 3px 3px 6px #00000029;
+ 
+
+  --font-primary: century-gothic, Helvetica, sans-serif;
+  --font-secondary: Helvetica, Arial, sans-serif;
+  --font-rainydays: good-times, Helvetica, Arial
+}

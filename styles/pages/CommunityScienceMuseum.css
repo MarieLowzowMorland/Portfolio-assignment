@@ -1,0 +1,28 @@
+@import '../common/variables.css';
+@import '../common/layout.css';
+@import '../common/text.css';
+@import '../templates/header.css';
+
+.svg-page-color,
+a:focus .svg-hover-page-color,
+a:hover .svg-hover-page-color {
+  fill: var(--csm);
+}
+
+.frontpage .menu-polygon {
+  background-image: url(../../images/csiencemuseum.png);
+}
+
+.frontpage .page-description, #skiplink a:focus { 
+  background-color: var(--csm);
+}
+
+@media screen and (min-width: 992px) {
+  .frontpage .description-wrapper {
+    background-image: url(../../images/csiencemuseum.png);
+  }
+
+  .frontpage .menu-polygon {
+    background-image: var(--science-gradient);
+  }
+}

@@ -1,0 +1,56 @@
+@import '../common/variables.css';
+@import '../common/layout.css';
+@import '../common/text.css';
+@import '../templates/header.css';
+
+#home-link {
+  display: none;
+}
+
+#mobile, #landscape {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-svg > svg a {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.nav-svg > svg a:hover,
+.nav-svg > svg a:focus {
+  opacity: 1;
+}
+
+#title{
+  transition: opacity 0.3s ease-in;
+}
+
+#csm:hover ~ #title,
+#csm:focus ~ #title,
+#rainydays:hover ~ #title,
+#rainydays:focus ~ #title{
+  opacity: 0;
+}
+
+#landscape {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #mobile {
+    display: none;
+  }
+
+  #landscape {
+    display: block;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../common/variables.css';
+@import '../common/layout.css';
+@import '../common/text.css';
+@import '../templates/header.css';
+
+.svg-page-color,
+a:focus .svg-hover-page-color,
+a:hover .svg-hover-page-color {
+  fill: var(--rainydays);
+}
+
+.frontpage .menu-polygon {
+  background-image: url(../../images/friendsOnAdventure.jpg);    
+  background-position: center left;
+}
+
+.frontpage .page-description, #skiplink a:focus { 
+  background-color: var(--rainydays);
+}
+
+@media screen and (min-width: 992px) {
+  .frontpage .description-wrapper {
+    background-image: url(../../images/friendsOnAdventure2.jpg);
+  }
+
+  .frontpage .menu-polygon {
+    background-image: none;
+    background-color: var(--rainydays);
+  }
+}
