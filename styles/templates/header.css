@@ -1,4 +1,4 @@
-#skiplink a{
+#skiplink a {
   position: fixed;
   left: 0;
   top: 0;
@@ -43,13 +43,13 @@
   background-color: transparent;
 }
 
-#hamburger-menu svg{
+#hamburger-menu svg {
   width: 2rem;
   height: auto;
 }
 
 #menu {
-  display: none
+  display: none;
 }
 
 #menu.open {
@@ -66,10 +66,10 @@
 }
 
 .shadow-wrapper {
-  filter:drop-shadow(var(--shadow))
+  filter: drop-shadow(var(--shadow));
 }
 
-#menu nav{    
+#menu nav {
   background-color: var(--primary-bg);
   background-image: var(--how-i-work-gradient);
   display: flex;
@@ -86,7 +86,7 @@
   clip-path: polygon(22% 100%, 100% 91%, 100% 0, 0 0);
 }
 
-#menu nav ul{
+#menu nav ul {
   overflow-y: auto;
   list-style: none;
   margin-top: 2rem;
@@ -98,23 +98,23 @@
   text-align: right;
   font-family: var(--font-primary);
   color: var(--text-secondary);
-} 
+}
 
-#menu nav li{
+#menu nav li {
   margin: 0.4rem 0;
-} 
+}
 
-#menu nav li a{
+#menu nav li a {
   text-decoration: none;
   color: var(--text-secondary);
-} 
+}
 
 #menu nav li a.active,
 #menu nav li a:focus,
-#menu nav li a:hover{
+#menu nav li a:hover {
   font-weight: bold;
   font-size: 1.01rem;
-} 
+}
 
 #close-menu:focus {
   clip: auto;
@@ -152,49 +152,46 @@
   line-height: 1.75rem;
 }
 
-.frontpage h1 em{
+.frontpage h1 em {
   font-style: normal;
   font-weight: bold;
   display: block;
 }
 
-.frontpage .banner{
+.frontpage .banner {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-.frontpage .menu-polygon {    
+.frontpage .menu-polygon {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
 }
 
-.frontpage .description-wrapper {    
+.frontpage .description-wrapper {
   min-height: 93%;
   min-width: 140%;
-	display: flex;
+  display: flex;
   align-items: flex-end;
 }
 
-.frontpage .page-description {    
+.frontpage .page-description {
   width: 100%;
   padding: 10px;
   padding-left: 2rem;
-  transform: 
-    translateX(50%) 
-    rotate(-90deg) 
-    translateY(-50%) 
+  transform: translateX(50%) rotate(-90deg) translateY(-50%)
     translateX(calc(50% - 2.5rem));
 }
 
-.frontpage .page-description p{   
+.frontpage .page-description p {
   font-family: var(--font-secondary);
   font-weight: bold;
   max-width: 230px;
   margin: 0;
   color: var(--text-secondary);
-} 
+}
 
 .external-links {
   width: 100%;
@@ -212,12 +209,12 @@
   font-family: var(--font-secondary);
 }
 
-.external-links a span{
+.external-links a span {
   border-bottom: 2px solid black;
 }
 
 .external-links a:hover span,
-.external-links a:focus span{
+.external-links a:focus span {
   font-weight: bold;
   font-size: 1.1rem;
   border-bottom: none;
@@ -243,7 +240,7 @@ header {
 }
 
 @media screen and (min-width: 992px) {
-  .header-menu, .mobile-header {
+  .mobile-header {
     display: none;
   }
 
@@ -256,13 +253,13 @@ header {
     left: 40px;
   }
 
-  .frontpage {   
+  .frontpage {
     min-height: 320px;
     height: 54.5vh;
     max-height: 40rem;
   }
 
-  .frontpage .menu-polygon {        
+  .frontpage .menu-polygon {
     width: 100%;
     max-width: 100%;
     max-height: 40rem;
@@ -272,21 +269,18 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  
-  .frontpage .description-wrapper {    
+
+  .frontpage .description-wrapper {
     min-width: 50%;
     min-height: 100%;
     flex: 0 0 50%;
     clip-path: polygon(0 100%, 100% 100%, 95% 0, 0 0);
   }
-  
+
   .frontpage .page-description {
     width: 40vh;
     max-width: 33rem;
-    transform: 
-      translateX(-50%) 
-      rotate(-90deg)       
-      translateY(50%) 
+    transform: translateX(-50%) rotate(-90deg) translateY(50%)
       translateX(calc(50% - 2.5rem));
   }
 
@@ -298,7 +292,7 @@ header {
     justify-content: center;
   }
 
-  .desktop-header h1{
+  .desktop-header h1 {
     padding-bottom: 15rem;
     max-width: 20rem;
     font-family: var(--font-secondary);

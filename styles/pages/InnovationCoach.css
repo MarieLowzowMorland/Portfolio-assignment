@@ -1,7 +1,7 @@
-@import '../common/variables.css';
-@import '../common/layout.css';
-@import '../common/text.css';
-@import '../templates/header.css';
+@import "../common/variables.css";
+@import "../common/layout.css";
+@import "../common/text.css";
+@import "../templates/header.css";
 
 .svg-page-color,
 a:focus .svg-hover-page-color,
@@ -14,7 +14,8 @@ a:hover .svg-hover-page-color {
   background-size: cover;
 }
 
-.frontpage .page-description, #skiplink a:focus { 
+.frontpage .page-description,
+#skiplink a:focus {
   background-color: var(--inovation-coach);
 }
 
