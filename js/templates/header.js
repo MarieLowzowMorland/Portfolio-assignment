@@ -6,7 +6,7 @@ export const pageNames = {
     url: "index.html",
   },
   How_I_work: {
-    name: "How I work",
+    name: "How I worked",
     url: "howIWork.html",
     header: `<em>My process</em>
     How I design, test and develop.
