@@ -19,58 +19,140 @@
     <header></header>
     <main id="main">
       <article>
-        <h2>Community Science Museum - A promotion site</h2>
-
-        <section>
-          <h3>Introduction</h3>
-          <p>
-            At the end of the autumn semester, I had a semester assignment where
-            I was to create a promotion page for a Community Science Museum. Its
-            core target audience are primary and middle school children (7-15)
-            and families with young children. The museum wants a website that is
-            informative and appealing, that will attract both middle school
-            pupils and their parents. The site should appeal to youngsters
-            without pandering.
-          </p>
-          <p>
-            Since the website, both through user testing and teachers'
-            evaluation, has received good feedback on design, considering the
-            target group. I therefore concluded that I shouldn’t change the
-            design too much, yet I “opened the museum”. By this I mean that I
-            removed warning boxes that warned that the museum was closed due to
-            covid 19.
-          </p>
-          <p>
-            Instead of major design changes, I have focused on functionality and
-            accessibility. The page was created at a time when I did not know
-            JavaScript, and it was coded with pure HTML and CSS. Now that I am
-            going to improve the page, it was natural to add some functionality
-            to the page through JS
-          </p>
-          <p>This are the changes I have made in this project:</p>
-          <ul>
-            <li><a>Join-event form</a></li>
-            <li><a>Skip link</a></li>
-            <li><a>Improved the “go to top”-links on the Exhibition page</a></li>
-            <li><a>Templated and improved some of the code</a></li>
-            <li><a>Other minor things</a></li>
-          </ul>
-        </section>
-
-        <section id="">
-          <h3>Join-event form</h3>
-          <p></p>
-        </section>
-
-        <section id="">
-          <h3>Introduction</h3>
-          <p></p>
-        </section>
-
-        <section id="">
-          <h3>Introduction</h3>
-          <p></p>
-        </section>
+        <article>
+          <section>
+            <h2>Introduction</h2>
+            <p>
+              At the end of the autumn semester, I had a semester assignment where I was to create a promotion page for a Community Science Museum. Its core target audience are primary and middle school children (7-15) and families with young children. The museum wants a website that is informative and appealing, that will attract both middle school pupils and their parents. The site should appeal to youngsters without pandering. 
+            </p>
+            <p>
+              Since the website, both through user testing and teachers' evaluation, has received good feedback on design, considering the target group. I therefore concluded that I shouldn’t change the design too much, yet I “opened the museum”. By this I mean that I removed warning boxes that warned that the museum was closed due to covid 19.
+            </p>
+            <p>
+              Instead of major design changes, I have focused on functionality and accessibility. The page was created at a time when I did not know JavaScript, and it was coded with pure HTML and CSS. Now that I am going to improve the page, it was natural to add some functionality to the page through JS.
+            </p>
+          </section>
+          <section>
+            <h2>Join-event form</h2>
+            <p>
+              I have two forms on the website: one to sign up for activities, and one to donate money to the museum. In this round of improvements, I have chosen to create a functional form for the "join event" page. The form on the "donate" page is thus something that remains. I chose the “sign up” form because that was the one that users had tried to use during my user testing and was disappointed when nothing happened. I set up a Wordpress instance as a headless CMS and installed a plugin called Contact Form 7. This is used to receive the forms with registrations for activities and store the answers in a database. 
+            </p>
+            <p>
+              After receiving good feedback from users on the contact form I made in my exam project, I have chosen to create a similar solution on this page. With a few small tweaks, I was able to reuse much of the code to validate and convey errors in the form. However, I saw that the green background color I had on the form was a crash against the red error messages and has changed the background color. In general, I think that the form “screamed” a bit to the users since there was a lot of uppercase labels and warning boxes, the latter gave me the impression of an error message before you had even tried to fill in the form. As you can see in the pictures below, I have also reduced the width of text and input fields, since the width should not exceed 80 characters
+            </p>
+            <figure>
+              <div class="single-desktop-row">
+                <div>
+                  <img
+                    width="100%"
+                    height="auto"
+                    src="../images/join1.jpg"
+                    alt="The original form with strong colors and uppercase text."
+                  />
+                </div>
+                <div>
+                <img
+                  width="100%"
+                  height="auto"
+                  src="../images/join2.jpg"
+                  alt="The new form with less components screaming for attention"
+                />
+              </div>
+                <div>
+                <img
+                  width="100%"
+                  height="auto"
+                  src="../images/join3.jpg"
+                  alt="How the form looks like when its invalid, with red error messages and icons"
+                />
+              </div>
+              </div>
+              <figcaption>
+                Images showing the change from the orignal form to the new one. The last image shows how an invalid form can look like.
+              </figcaption>
+            </figure>
+          </section>
+          <section>
+            <h2>Skip links</h2>
+            <p>
+              While I worked with my exam project, I learned a lot about accessibility, and some ways to improve the user experience for people that prefer the keyboard. With this fresh in my mind, I added skip links to let the user get to the main content with the press of just two buttons, avoiding the need to read through a repeating menu. Since people who navigate with a mouse does not need these links, the link only becomes visible if you use keyboard to focus it.
+            </p>
+          </section>
+          <section>
+            <h2>Menu improvements</h2>
+            <p>
+              Since the page was in pure HTML and CSS, the hamburger menu was coded as a hidden ckecbox with the menu button coded as a label. This is an obvious breach of WCAG, yet was necessary when I didn’t have JS to use for interaction.
+            </p>
+            <p>
+              Therefore, coded it as a button instead was a prioritized task, and while I was at it, I also improved the user experience with a tip I got during my exam. A user that used VoiceOver on his mobile phone told me that it was annoying that he had to navigate back to the menu button in order to close the menu after he had just read through all the menu options on his way down. Based on his feedback, I now added a hidden button at the end, using much the same technique as I did with the skip link. Also, I added that the original menu button received the focus when the menu was closed so that it is easy to open it again, and intuitive to move the focus further down the page.
+            </p>
+            <figure>
+              <div class="single-desktop-row">
+                <div>
+                  <img
+                    width="100%"
+                    height="auto"
+                    src="../images/exhibition1.jpg"
+                    alt="Exhibition page with menu open, only links in menu list visible"
+                  />
+                </div>
+                <div>
+                <img
+                  width="100%"
+                  height="auto"
+                  src="../images/exhibition2.jpg"
+                  alt="Exhibition page with menu open, and a close menu element visible at the bottom"
+                />
+              </div>
+              </div>
+              <figcaption>
+                The original menu with only links on one image, and how the "Close menu" button appears shown on the other
+              </figcaption>
+            </figure>
+          </section>
+          <section>
+            <h2>Go-to-top buttons</h2>
+            <p>
+              The Exhibition page is rather long and had some buttons here and there that could move the screen back up again in order to let the user easily navigate back up. Using my new routine for testing my own page, I quickly discovered that the focus order didn’t work as smoothly as intended for keyboard users. Based on my findings, I changed the links on the buttons so that it focuses the top of the main landmark instead, where there is a list of content with links. Now the user can select section from the list, jump to that section, tab once to get a link that goes back up to the list of links. I felt this was much more useful for a keyboard user.
+            </p>
+          </section>
+          <section>
+            <h2>Improved code</h2>
+            <p>
+              While working with the header, it also became tempting to create templates for header, footer, and icons to reuse the html rather that duplicate it. This makes the code much easier to maintain and improve. One of my feedbacks from the teachers was to use the CSS import statement to import the CSS a page needs from the page specific CSS-file, rather than having a long list in the HTML file, I therefore cleaned up this as well, so that my new HTML-files are much shorter now, and more adherent to the DRY principle.
+            </p>
+          </section>
+          <section>
+            <h2>Other small improvements</h2>
+            <ul>
+              <li>
+                In the document titles, the current page now comes before the site. This makes i.e. navigating bookmarks easier.
+              </li>
+              <li>
+                Opened the museum by adding opening times and removing warnings that said the opposite
+              </li>
+              <li>
+                A more prominent focus style.
+              </li>
+              <li>
+                Some images did not have an accessible name on the exhibition page. I have now fixed that by adding role=«img» and aria-label attributes. The design changes quite a lot between devices (the background image can be on the entire section or a div inside), so what I did for the exhibitions was that I added a new span that I marked as an image with an accessible name. This means that the image description is read aloud for all devices, and after the heading, which seems to me like the most user-friendly order.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>What I know remains</h2>
+            <ul>
+              <li>
+                Since the museum is now open, I would’ve liked to promote an exciting exhibition rather than “The Museum Shop is Open”. I.e., an exhibition about the creation of vaccines.
+              </li>
+              <li>
+                The HTML code would be much more concise if I had templated them in JS an extracted the SVGs.
+              </li>
+              <li>
+                After I’ve done other improvements, I now realize that the exhibitions should be coded as articles rather than sections, since they are independent on each other. 
+              </li>
+            </ul>
+          </section>
       </article>
     </main>
     <script src="./js/pages/communityScienceMuseum.js" type="module"></script>
